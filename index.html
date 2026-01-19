@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+
+    <!-- Audio Button -->
+    <div class="audio-btn">
+        <i class="fas fa-music"></i>
+    </div>
+    <audio id="bg-music" preload="auto">
+        <source src="background-music.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Page 1: Main Page -->
+    <div class="page active page1">
+        <div class="container">
+            <div class="image-container">
+                <img src="cat-hearts.jpg" alt="Cute Cat with Hearts">
+            </div>
+            <h1>HAPPY NATIONAL GIRLFRIEND DAY</h1>
+            <p style="margin-top: 20px;">(1 August 2025)</p>
+            <p style="margin-bottom: 25px;">Click the next button!! (つ◔◡◔)つ♥</p>
+            <button class="btn" onclick="navigateTo(1)">
+                Next!! ^w^
+            </button>
+        </div>
+    </div>
+
+    <!-- Page 2: Envelope -->
+    <div class="page page2">
+        <div class="container">
+            <div class="image-container" style="font-size: 0; line-height: 0;">
+                <img src="envelope.jpeg" alt="Pink Envelope">
+            </div>
+            <h2 style="white-space: normal; word-break: break-word; text-align: center;">
+                Do you want to open it?<br>
+                "ヾ(˃̶⺫˂̶)ノ"
+            </h2>
+            <div>
+                <button class="btn" onclick="navigateTo(3)">
+                    Open it
+                </button>
+                <button class="btn btn-green" onclick="navigateTo(2)">
+                    No ty
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Try Again -->
+    <div class="page page3">
+        <div class="container">
+            <div class="image-container">
+                <img src="crying-melody.jpg" alt="My Melody Crying">
+            </div>
+            <p class="sad-text" style="white-space: nowrap;">
+                Awh... Let's try again, Please..? ＞︿＜
+            </p>
+            <button class="btn" onclick="navigateTo(1)">
+                Again..?
+            </button>
+        </div>
+    </div>
+
+    <!-- Page 4: Message -->
+    <div class="page page4">
+        <div class="container">
+            <div style="margin-bottom: 20px; text-align: center;">
+                <h3 style="font-size: 2.5rem; color: #ff85a2; text-shadow: 2px 2px 0 #fff;">Ooo... A message 💗</h3>
+            </div>
+            <div class="message-background">
+                <h2 style="white-space: normal; word-break: break-word; text-align: center;">
+                    To my love<br>
+                    (^○^)
+                </h2>
+                <div class="message-text">
+                    You're the best thing that life has given me so far and I know nothing can take your place in my heart. The love I have for you is pure and eternal! You bring so much joy into my life that is very hard for me even to imagine a life without you.
+                    <br><br>
+                    It feels like I have been living in paradise since I met you. I love you not only for who you are, but for who I am with you. You have made me a better person and have always believed in me. I think I fell in love with you even before I met you.
+                    <br><br>
+                    Life comes with challenges but with you by my side, we can take on the world together. I love you for all what you are, all that you have been and all that you are yet to be. If I know what love is, it is because of you! I LOVE YOU SO MUCH MY LOVE! HAPPY GIRLFRIEND'S DAY!
+                </div>
+            </div>
+            <button class="btn" onclick="navigateTo(0)">
+                Back to Start
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
